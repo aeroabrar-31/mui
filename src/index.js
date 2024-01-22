@@ -4,6 +4,12 @@ import "./index.css";
 import App from "./App";
 import Practice from "./practice";
 import reportWebVitals from "./reportWebVitals";
+import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
+
+Kommunicate.init("751d78371567369de15bdd41b9f787c6", {
+  automaticChatOpenOnNavigation: true,
+  popupWidget: true,
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
